@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -12,6 +13,7 @@ namespace Web_Api_Sistema_Ventas.Models
             Venta = new HashSet<Venta>();
         }
 
+        [Key] 
         public int IdPedido { get; set; }
         public int Cantidad { get; set; }
         public decimal PrecioUni { get; set; }

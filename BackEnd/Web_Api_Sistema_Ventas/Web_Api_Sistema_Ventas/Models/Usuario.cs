@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -7,6 +8,7 @@ namespace Web_Api_Sistema_Ventas.Models
 {
     public partial class Usuario
     {
+        [Key]
         public string Usuario1 { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }

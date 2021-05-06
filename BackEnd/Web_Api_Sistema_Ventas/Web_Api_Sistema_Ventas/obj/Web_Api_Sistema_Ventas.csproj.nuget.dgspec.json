@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Web Api\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas.csproj": {}
+    "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Sistema_Ventas\\BackEnd\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Web Api\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas.csproj": {
+    "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Sistema_Ventas\\BackEnd\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Web Api\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas.csproj",
+        "projectUniqueName": "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Sistema_Ventas\\BackEnd\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas.csproj",
         "projectName": "Web_Api_Sistema_Ventas",
-        "projectPath": "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Web Api\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas.csproj",
+        "projectPath": "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Sistema_Ventas\\BackEnd\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas.csproj",
         "packagesPath": "C:\\Users\\REY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Web Api\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\obj\\",
+        "outputPath": "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Sistema_Ventas\\BackEnd\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

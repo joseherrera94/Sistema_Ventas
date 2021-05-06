@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -7,6 +8,7 @@ namespace Web_Api_Sistema_Ventas.Models
 {
     public partial class Venta
     {
+        [Key]
         public int IdVenta { get; set; }
         public decimal Iva { get; set; }
         public decimal Total { get; set; }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aRmTysAb+TWCM0lkLQCOOYHsssAiApsT5he9tRw2IaB1dtMFZj9rAptwzjBOmqfbErR1U+Bwh6miQbL5yxAbhw==",
+  "dgSpecHash": "P08l83GOPh/Rdvv3NSy7FDfuYpIHddiXqlcfc1fLt6lSIl5D91XSlQnRgYBB+G1l1ex1tPnqWCiN7j5HtiaE7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Web Api\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas.csproj",
+  "projectFilePath": "C:\\Users\\REY\\Desktop\\PROYECTO SISTEMAS VENTAS\\Sistema_Ventas\\BackEnd\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas\\Web_Api_Sistema_Ventas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\REY\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\REY\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

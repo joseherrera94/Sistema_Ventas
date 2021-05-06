@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -12,6 +13,7 @@ namespace Web_Api_Sistema_Ventas.Models
             Pedidos = new HashSet<Pedido>();
         }
 
+        [Key]
         public int IdProducto { get; set; }
         public string NombreProduc { get; set; }
         public int SnActivo { get; set; }

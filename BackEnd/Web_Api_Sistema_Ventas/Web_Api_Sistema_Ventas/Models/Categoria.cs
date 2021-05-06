@@ -13,6 +13,7 @@ namespace Web_Api_Sistema_Ventas.Models
             Productos = new HashSet<Producto>();
         }
 
+        [Key]
         public int IdCateg { get; set; }
         public string NombreCateg { get; set; }
         public int SnActivo { get; set; }
