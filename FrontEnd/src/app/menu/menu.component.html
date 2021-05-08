@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <span>
+        <a mat-button>
+            <mat-icon>home</mat-icon> Inicio
+        </a>
+        <a routerLink = "usuario" mat-button>
+            <mat-icon>manage_accounts</mat-icon> Usuarios
+        </a>
+        <a>
+            <button mat-button [matMenuTriggerFor]="administracion"><mat-icon>settings_applications</mat-icon> Administración</button>
+            <mat-menu #administracion="matMenu">
+                <button mat-menu-item routerLink = "categoria" ><mat-icon>fact_check</mat-icon> Categorias</button>
+            </mat-menu>
+        </a>
+</span>
+</mat-toolbar>
