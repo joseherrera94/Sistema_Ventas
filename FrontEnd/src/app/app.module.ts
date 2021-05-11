@@ -14,6 +14,8 @@ import { CategoriaComponent } from './categoria/categoria.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { EditarcateogiraComponent } from './categoria/editarcateogira/editarcateogira.component';
 import { FormulariocategoriaComponent } from './categoria/formulariocategoria/formulariocategoria.component';
+import { FiltrocategoriaComponent } from './categoria/filtrocategoria/filtrocategoria.component';
+import { ListarcategoriaComponent } from './categoria/listarcategoria/listarcategoria.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { FormulariocategoriaComponent } from './categoria/formulariocategoria/fo
     UsuarioComponent,
     EditarcateogiraComponent,
     FormulariocategoriaComponent,
+    FiltrocategoriaComponent,
+    ListarcategoriaComponent,
   ],
   imports: [
     BrowserModule,

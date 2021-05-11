@@ -1,0 +1,13 @@
+<h2>Buscar Peliculas</h2>
+
+<form [formGroup]="form">
+    <mat-form-field appearance="outline">
+        <mat-label>Nombre Categoria</mat-label>
+        <input formControlName="nombre_categ" matInput>
+    </mat-form-field>
+    <div>
+        <button mat-flat-button (click)="limpiar()" color="warn">Limpiar</button>
+    </div>
+</form>
+
+<app-listarcategoria [categorias]="categorias"></app-listarcategoria>

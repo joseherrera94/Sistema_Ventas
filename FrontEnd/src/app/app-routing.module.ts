@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CrearcategoriaComponent } from './categoria/crearcategoria/crearcategoria.component';
 import { EditarcateogiraComponent } from './categoria/editarcateogira/editarcateogira.component';
+import { FiltrocategoriaComponent } from './categoria/filtrocategoria/filtrocategoria.component';
 import { CrearComponent } from './usuario/crear/crear.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'categoria',component:CategoriaComponent},
   {path:'categoria/crearcategoria',component:CrearcategoriaComponent},
   {path:'categoria/editarcategoria/:id',component:EditarcateogiraComponent},
+  {path:'categoria/buscar',component:FiltrocategoriaComponent},
   {path:'**',redirectTo:'usuario'}
 ];
 
