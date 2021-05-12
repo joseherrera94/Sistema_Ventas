@@ -8,8 +8,12 @@
     <p>
         <mat-slide-toggle formControlName="sn_activo" color="primary"> Activo</mat-slide-toggle>
     </p>
-    <div>
 
+    <app-cargarimagen [urlImgActual]="modelo?.foto" (archivoSelec)="archivoSelec($event)"></app-cargarimagen>
+
+    <app-inputmarkdown></app-inputmarkdown>
+
+    <div>
         <button mat-flat-button color="primary" [disabled]="form.invalid">Guardar</button>
         <a mat-stroked-button routerLink="/categoria ">Cancelar</a>
     </div>

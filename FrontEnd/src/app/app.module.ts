@@ -16,6 +16,8 @@ import { EditarcateogiraComponent } from './categoria/editarcateogira/editarcate
 import { FormulariocategoriaComponent } from './categoria/formulariocategoria/formulariocategoria.component';
 import { FiltrocategoriaComponent } from './categoria/filtrocategoria/filtrocategoria.component';
 import { ListarcategoriaComponent } from './categoria/listarcategoria/listarcategoria.component';
+import { CargarimagenComponent } from './utilidades/cargarimagen/cargarimagen.component';
+import { InputmarkdownComponent } from './utilidades/inputmarkdown/inputmarkdown.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { ListarcategoriaComponent } from './categoria/listarcategoria/listarcate
     FormulariocategoriaComponent,
     FiltrocategoriaComponent,
     ListarcategoriaComponent,
+    CargarimagenComponent,
+    InputmarkdownComponent,
   ],
   imports: [
     BrowserModule,

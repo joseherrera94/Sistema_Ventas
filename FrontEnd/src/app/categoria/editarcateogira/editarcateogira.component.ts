@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { crearcategoriaDTO } from '../categoria';
+import { categoriaDTO, crearcategoriaDTO } from '../categoria';
 
 @Component({
   selector: 'app-editarcateogira',
@@ -11,9 +11,10 @@ export class EditarcateogiraComponent implements OnInit {
 
   constructor(private activeRoute: ActivatedRoute,private router : Router ) { }
 
-modelo : crearcategoriaDTO = {
+modelo : categoriaDTO = {
   nombre:"Frutas",
-  sn_activo: true
+  sn_activo: true,
+  foto:'https://i.pinimg.com/originals/90/60/9a/90609aacf7d6e65c654a959ee378c64e.jpg',
 };
 
   ngOnInit(): void {

@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { primeraLetraMayuscula } from 'src/app/validadores/primeraletraMayus';
-import { crearcategoriaDTO } from '../categoria';
+import { categoriaDTO, crearcategoriaDTO } from '../categoria';
 
 @Component({
   selector: 'app-formulariocategoria',
@@ -16,7 +16,7 @@ export class FormulariocategoriaComponent implements OnInit {
   form : FormGroup ;
 
 @Input()
-modelo:crearcategoriaDTO;
+modelo:categoriaDTO;
 
 @Output()
 submit: EventEmitter<crearcategoriaDTO> = new EventEmitter<crearcategoriaDTO>();
@@ -26,7 +26,8 @@ submit: EventEmitter<crearcategoriaDTO> = new EventEmitter<crearcategoriaDTO>();
       nombre : ['',{
         validators:[Validators.required,Validators.maxLength(50),primeraLetraMayuscula()]
       }],
-      sn_activo:true
+      sn_activo:true,
+      foto:''
     });
 
     if (this.modelo != undefined){
@@ -34,6 +35,11 @@ submit: EventEmitter<crearcategoriaDTO> = new EventEmitter<crearcategoriaDTO>();
     }
   }
  
+  archivoSelec(file){
+    console.log('foto ' + file);
+    this.form.get('foto').setValue(file);
+  }
+
 guardarCategoria(){
   this.submit.emit(this.form.value);
 }

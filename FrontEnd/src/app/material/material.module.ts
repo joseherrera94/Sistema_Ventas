@@ -11,7 +11,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-
+import {MatTabsModule} from '@angular/material/tabs'
 
 @NgModule({
   declarations: [],
@@ -29,6 +29,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatFormFieldModule,
     MatSelectModule,
     MatCheckboxModule,
+    MatTabsModule,
   ]
 })
 export class MaterialModule { }
