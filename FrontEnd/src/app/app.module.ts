@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule} from '@angular/forms'
+import { ReactiveFormsModule} from '@angular/forms';
+import { MarkdownModule} from 'ngx-markdown';
 
 import {MaterialModule} from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
@@ -18,7 +19,9 @@ import { FiltrocategoriaComponent } from './categoria/filtrocategoria/filtrocate
 import { ListarcategoriaComponent } from './categoria/listarcategoria/listarcategoria.component';
 import { CargarimagenComponent } from './utilidades/cargarimagen/cargarimagen.component';
 import { InputmarkdownComponent } from './utilidades/inputmarkdown/inputmarkdown.component';
-
+import {LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { MapaComponent } from './utilidades/mapa/mapa.component';
+import "leaflet/dist/images/marker-shadow.png";
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +36,7 @@ import { InputmarkdownComponent } from './utilidades/inputmarkdown/inputmarkdown
     ListarcategoriaComponent,
     CargarimagenComponent,
     InputmarkdownComponent,
+    MapaComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +44,8 @@ import { InputmarkdownComponent } from './utilidades/inputmarkdown/inputmarkdown
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
+    LeafletModule,
+    MarkdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

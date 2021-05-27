@@ -11,7 +11,10 @@
 
     <app-cargarimagen [urlImgActual]="modelo?.foto" (archivoSelec)="archivoSelec($event)"></app-cargarimagen>
 
-    <app-inputmarkdown></app-inputmarkdown>
+    <app-inputmarkdown (changeMarkDown)="cambioMarkDown($event)"></app-inputmarkdown>
+    <div>
+        <app-mapa (coordenadaSelect)="coordenadaSelectt($event)" [coordenadaIni]="coordenadaIni"></app-mapa>
+    </div>
 
     <div>
         <button mat-flat-button color="primary" [disabled]="form.invalid">Guardar</button>

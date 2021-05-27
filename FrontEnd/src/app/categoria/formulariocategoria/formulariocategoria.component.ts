@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Coordenada } from 'src/app/utilidades/mapa/coordenada';
 import { primeraLetraMayuscula } from 'src/app/validadores/primeraletraMayus';
 import { categoriaDTO, crearcategoriaDTO } from '../categoria';
 
@@ -19,7 +20,9 @@ export class FormulariocategoriaComponent implements OnInit {
 modelo:categoriaDTO;
 
 @Output()
-submit: EventEmitter<crearcategoriaDTO> = new EventEmitter<crearcategoriaDTO>();
+Onsubmit: EventEmitter<crearcategoriaDTO> = new EventEmitter<crearcategoriaDTO>();
+
+coordenadaIni : Coordenada[]=[];
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -27,21 +30,33 @@ submit: EventEmitter<crearcategoriaDTO> = new EventEmitter<crearcategoriaDTO>();
         validators:[Validators.required,Validators.maxLength(50),primeraLetraMayuscula()]
       }],
       sn_activo:true,
-      foto:''
+      foto:'',
+      descripcion:'',
+      latitud:'',
+      longitud:'',
     });
 
     if (this.modelo != undefined){
       this.form.patchValue(this.modelo);
+      this.coordenadaIni.push({latitud:this.modelo.latitud,longitud:this.modelo.longitud});
     }
   }
  
   archivoSelec(file){
-    console.log('foto ' + file);
+    //console.log('foto ' + file);
     this.form.get('foto').setValue(file);
   }
 
+  cambioMarkDown(texto){
+    this.form.get('descripcion').setValue(texto);
+  }
+
+  coordenadaSelectt(coordenada : Coordenada){
+    this.form.patchValue(coordenada);
+  }
+
 guardarCategoria(){
-  this.submit.emit(this.form.value);
+  this.Onsubmit.emit(this.form.value);
 }
 
   ObtenerErrorCampoNombre(){
